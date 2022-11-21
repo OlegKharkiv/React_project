@@ -3,6 +3,17 @@
     border-bottom: 1px solid #3d5a80;
 }
 
+.d-flex {
+    @media (max-width: 390+px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 412+px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .list-group-item:last-child {
     border-bottom: none;
 }
@@ -65,4 +76,12 @@
 
 .list-group-item.increase .btn-star {
     color: #aeaeae
+}
+.d-flex justify-content-center align-items-center {
+    @media (max-width: 390+px) {
+        flex-direction: row;
+    }
+    @media (max-width: 412+px) {
+        flex-direction: row;
+    }
 }

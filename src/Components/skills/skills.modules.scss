@@ -4,6 +4,14 @@
     border-radius: 2px;
     color: rgba(11, 14, 14, 0.959);
     display: flex;
+    @media (max-width: 412+px) {
+        margin-top: 10px;
+        flex-wrap: wrap;
+      }
+    @media (max-width: 390+px) {
+        margin-top: 10px;
+        flex-wrap: wrap;
+      }
 }
 .skills-column__container{
     overflow: hidden;

@@ -1,5 +1,5 @@
 import EducationListItem from '../education-list-item/education-list-item';
-import './education-list.css';
+import './education-list.modules.scss';
 
 const EducationList = ({data, onDelete, onToggleProp}) => {
 

@@ -1,5 +1,5 @@
 
-import './about-info.css';
+import './about-info.modules.scss';
 import SelfImage from '../images_01/Avatarr 0711.jpg';
 
 

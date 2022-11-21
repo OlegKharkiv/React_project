@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './app-info.css';
+import './app-info.modules.scss';
 import images from '../../Components/images_01/exels-shonejai-1227511.jpg';
 // import AnimationOnScroll from '../services/service_script';
 

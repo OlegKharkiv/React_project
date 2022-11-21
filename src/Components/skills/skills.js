@@ -1,5 +1,5 @@
 
-import './skills.css';
+import './skills.modules.scss';
 
 
 const SkillsInfo = () => {

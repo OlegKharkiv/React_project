@@ -1,4 +1,4 @@
-import "./education-list-item.css";
+import "./education-list-item.modules.scss";
 
 const EducationListItem = (props) => {
     const {name, year, onDelete, onToggleProp, increase, promotion} = props;
@@ -9,7 +9,7 @@ const EducationListItem = (props) => {
             classNames += ' increase';
         }
         if (promotion) {
-            classNames += ' like';
+            classNames += ' like'; 
         }
 
         return (
