@@ -4,8 +4,7 @@ import nextId from "react-id-generator";
 
 
 import AppInfo from '../app-info/app-info';
-import SearchPanel from '../search-panel/search-panel';
-import AppFilter from '../app-filter/app-filter';
+import ProductCard from '../product-card/product-card';
 import EducationList from '../education-list/education-list';
 import EducationAddForm from '../education-add-form/education-add-form';
 import AboutInfo from '../about-info/about-info';
@@ -95,21 +94,16 @@ class App extends Component {
 
     render() {
         const {data, term, filter} = this.state;
-        const diplomas = this.state.data.length;
-        const increased = this.state.data.filter(item => item.increase).length;
         const visibleData = this.filterEmp(this.searchEmp(data, term), filter);
         return (
             <div className="app">
-                <AppInfo
-                diplomas={diplomas}
-                increased={increased}/>
+                <AppInfo/>
                 <div className="page">
                     <div> 
                         <AboutInfo/>
                     </div>
                     <div className="search-panel">
-                        <SearchPanel onUpdateSearch={this.onUpdateSearch}/>
-                        <AppFilter filter={filter} onFilterSelect={this.onFilterSelect}/>
+                        <ProductCard/>
                     </div>
                     <EducationList 
                     data={visibleData}

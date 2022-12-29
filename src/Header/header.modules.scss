@@ -1,0 +1,61 @@
+@import '../style/index.scss'; 
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: relative;
+    display: inline-flex;
+    min-width: 320px;
+    z-index: 1;
+    padding: 0px 0px 190px 0px;
+    margin: 10px 0px 0px 0px;
+    @media (max-width: $md3+px) {
+        padding: 10px 0px 40px 0px;
+    }
+}
+
+.header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.header__logo {
+    padding: 20px 0px 0px 150px;
+    @media (max-width: $md3+px) {
+        padding: 10px 0px 0px 20px;
+    }
+}
+.header__links {
+    padding: 38px 0px 0px 0px;
+}
+
+.header__link {
+    /* width: 366px;
+    height: 18px; */
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 40px;
+    @media (max-width: $md3+px) {
+        font-size: 8px;
+    }
+}
+/* .header__link:link{
+    color: black;
+} */
+.header__link:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.header__link:after {
+    content: '';
+    
+}
+
