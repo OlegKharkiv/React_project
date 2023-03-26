@@ -1,15 +1,23 @@
-import { useState } from 'react';
+
 import './product-card.modules.scss';
 import ButtonRipple from '../../Button_ripple/button_ripple';
+import '@stripe/react-stripe-js';
 
 import NailsFrench from '../images_01/jodene-isakowitz-hvqHtZqNMeI-unsplash.jpg';
 import NailsManicure from '../images_01/jodene-isakowitz-hvqHtZqNMeI-unsplash.jpg';
 import NailsRed from '../images_01/jodene-isakowitz-hvqHtZqNMeI-unsplash.jpg';
-import StripeContainer from '../StripeContainer';
+
+import { useNavigate } from "react-router-dom";
+
 
 
 function ProductCard() { 
-    const [showItem, setShowItem] = useState(false);
+    
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+    let path = `/payment`; 
+    navigate(path);
+  }
 
     
     return (
@@ -24,7 +32,7 @@ function ProductCard() {
                                     <span>FREE</span>
                                 </div>
                                 <div className="btn__wrapper">
-                                    <ButtonRipple/>
+                                    <ButtonRipple />
                                 </div>
                             </div>
                             <div className="card__item">
@@ -34,25 +42,19 @@ function ProductCard() {
                                     <span>4.99&#163;</span>
                                 </div>
                                 <div className="btn__wrapper">
-                                    <ButtonRipple/>
+                                    <ButtonRipple onClick={() => routeChange() }/>
                                 </div>
                             </div>
-                            {showItem ? (
-                                        <StripeContainer /> 
-                                        ) : (
-                                            <>
-                                                <div className="card__item">
-                                                    <img src={NailsRed} alt="The screen of the red polish nails" />
-                                                    <h3 className="card__item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, inventore.</h3>
-                                                    <div className="card__item-price">
-                                                        <span>7.99&#163;</span>
-                                                    </div>
-                                                    <div className="btn__wrapper">
-                                                        <ButtonRipple onClick={() => setShowItem(true)}/>
-                                                    </div>
-                                                </div>
-                                            </>
-                            )}
+                            <div className="card__item">
+                                <img src={NailsRed} alt="The screen of the red polish nails" />
+                                <h3 className="card__item-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, inventore.</h3>
+                                <div className="card__item-price">
+                                    <span>7.99&#163;</span>
+                                </div>
+                                <div className="btn__wrapper">
+                                    <ButtonRipple />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
