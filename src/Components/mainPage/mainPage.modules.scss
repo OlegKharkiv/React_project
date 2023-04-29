@@ -40,16 +40,18 @@
 }
 
 .footer {
-	
-}
-.footer__container {
-	display: grid;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	border-top: 1px solid #DEDFE1;
-	grid-template-columns: auto 1fr;
-	row-gap: 70px;
-	column-gap: 20px;
+
+	.footer__container {
+		display: grid;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		border-top: 1px solid #DEDFE1;
+		grid-template-columns: auto 1fr;
+		row-gap: 70px;
+		column-gap: 20px;
+		position: relative;
+	}
+
 }
 
 

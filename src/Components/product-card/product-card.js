@@ -22,7 +22,7 @@ function ProductCard() {
     
     return (
             <div className="bestsellers">
-                    <h2 className="title">Our offer</h2>
+                    <h2 className="title__container">Our offer</h2>
                     <div className="our-best">
                         <div className="our-best-container">
                             <div className="card__item">

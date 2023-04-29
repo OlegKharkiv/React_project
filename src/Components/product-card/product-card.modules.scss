@@ -3,19 +3,19 @@
 
 .bestsellers{
     position: relative;
-    width: 1440px; 
-    margin: -20px 0px 0px 0px;
-    padding: 3px 0px;
-    @media (max-width: $md2+px) {
-        width:100%;
-        height: 100%;
-    }
-    @media (max-width: $md4+px) {
-        width:100%;
-        height: 100%;
-    }
+    // width: 1440px; 
+    // margin: -20px 0px 0px 0px;
+    // padding: 50px 0px;
+    // @media (max-width: $md2+px) {
+    //     width:100%;
+    //     height: 100%;
+    // }
+    // @media (max-width: $md4+px) {
+    //     width:100%;
+    //     height: 100%;
+    // }
     
-        .title {
+        .title__container {
             font-family: 'Merienda';
             font-style: normal;
             font-weight: 400;
@@ -23,63 +23,70 @@
             line-height: 35px;
             color: #FFF;
             position: relative;
-            display:inline-flex;
-            margin: 79px 669px 0px 668px;
-            @media (max-width: 1450+px) {
-                margin: 5% 0% 0% 47%;
-            }
-            @media (max-width: 1280+px) {
-                padding: 39px 379px 0px 0px;
-                margin: 0px 0px 0px 591px;
-            }
-            @media (max-width: 1240+px) {
-                padding: 39px 0px 0px 0px;
-                margin: 0px 0px 0px 518px;
-            }
-            @media (max-width: 1024+px) {
-                margin: 5% 0% 0% 31%; 
-            }
-            @media (max-width: $md2+px) {
-                margin: 5% 25% 0% 44%;
-            }
-            @media (max-width: $md4+px) {
-                margin: 5% 25% 0% 37%;
-            }
+            text-align: center;
+            margin-top: 0.5rem;
+            // padding-top: 20px;
+            border-top: 1px solid #DEDFE1;
+            text-align: center;
+            padding: 10px 0px;
+            position: relative;
+            // display:inline-flex;
+            // margin: 79px 669px 0px 668px;
+            // @media (max-width: 1450+px) {
+            //     margin: 5% 0% 0% 47%;
+            // }
+            // @media (max-width: 1280+px) {
+            //     padding: 39px 379px 0px 0px;
+            //     margin: 0px 0px 0px 591px;
+            // }
+            // @media (max-width: 1240+px) {
+            //     padding: 39px 0px 0px 0px;
+            //     margin: 0px 0px 0px 518px;
+            // }
+            // @media (max-width: 1024+px) {
+            //     margin: 5% 0% 0% 31%; 
+            // }
+            // @media (max-width: $md2+px) {
+            //     margin: 5% 25% 0% 44%;
+            // }
+            // @media (max-width: $md4+px) {
+            //     margin: 5% 25% 0% 37%;
+            // }
         }
         .our-best-container {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-right: 320px;
-            padding: 39px 0px 0px 350px;
+            // justify-content: space-between;
+            // align-items: flex-start;
+            // margin-right: 320px;
+            // padding: 39px 0px 0px 350px;
             position: relative;
-            @media (max-width: 1450+px) {
-                padding: 39px 277px 0px 0px;
-                margin: 0px 0px 0px 320px;
-            }
-            @media (max-width: 1280+px) {
-                padding: 39px 434px 0px 0px;
-                margin: 0px 0px 0px 188px;
-            }
-            @media (max-width: 1240+px) {
-                padding: 39px 443px 0px 0px;
-                margin-left: 140px;
-            }
-            @media (max-width: 1024+px) {
-                padding: 20px 571px 0px 122px;
-                margin: 0px auto; 
-            }
+            padding-bottom: 50px;
+            column-gap: 30px;
+            // @media (max-width: 1450+px) {
+            //     padding: 39px 277px 0px 0px;
+            //     margin: 0px 0px 0px 320px;
+            // }
+            // @media (max-width: 1280+px) {
+            //     padding: 39px 434px 0px 0px;
+            //     margin: 0px 0px 0px 188px;
+            // }
+            // @media (max-width: 1240+px) {
+            //     padding: 39px 443px 0px 0px;
+            //     margin-left: 140px;
+            // }
+            // @media (max-width: 1024+px) {
+            //     padding: 20px 571px 0px 122px;
+            //     margin: 0px auto; 
+            // }
             @media (max-width: $md2+px) {
-                margin-right: auto;
                 flex-direction: column;
                 align-items: center;
-                padding: 0; 
             }
             @media (max-width: $md4+px) {
-                margin-right: auto;
-                flex-direction: column;
-                align-items: center;
-                padding: 0;
+                // margin-right: auto;
+                // flex-direction: column;
+                // align-items: center;
+                // padding: 0;
             }
 
             .card__item {
